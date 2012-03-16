@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top>
+	<test query="tree">
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="2591" fragment=" of /nThat living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 80"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2228" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 68"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2831" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2826" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2827" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="2857" fragment=" &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;/nWithin whose" location="l. 86"/>
+	</test>
+ 	<test query="tree within">
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1476" fragment=" still strove/n &amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt;" location="l. 46"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2228" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 68"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2256" fragment="/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose secret" location="l. 69"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1677" fragment="/n &amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; the gulf" location="l. 52"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2831" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2859" fragment=",/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose" location="l. 87"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1676" fragment="/n &amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; the gulf" location="l. 52"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2826" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2854" fragment="/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose secret" location="l. 87"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1677" fragment="/n &amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; the gulf" location="l. 52"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2827" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2855" fragment="/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose secret" location="l. 87"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="2864" fragment=" &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose" location="l. 87"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1671" fragment="/n &amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; the gulf" location="l. 51"/>
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="2591" fragment=" of /nThat living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 80"/>
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="2619" fragment="/n&amp;lt;b&amp;gt;Within&amp;lt;/b&amp;gt; whose secret" location="l. 81"/>
+ 	</test>
+ 	<test query="sun">
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="977" fragment=" see the &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt;./n/nIt lies" location="l. 30"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1773" fragment="./n/nThe &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt; was gone now" location="l. 55"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="977" fragment=" see the &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt;./n/nIt lies" location="l. 30"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1772" fragment="./n/nThe &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt; was gone now" location="l. 55"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="977" fragment=" see the &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt;./n/nIt lies" location="l. 30"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1773" fragment="./n/nThe &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt; was gone now" location="l. 55"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="978" fragment=" see the &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt;" location="l. 30"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1774" fragment="./n/nThe &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt; was gone now" location="l. 55"/>
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="974" fragment=" scarce see the &amp;lt;b&amp;gt;sun&amp;lt;/b&amp;gt;" location="l. 30"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="976" fragment=" The &amp;lt;b&amp;gt;Sun&amp;lt;/b&amp;gt;./n/nHeard hardly" location="l. 30"/>
+ 	</test>
+ 	<test query="tree with">
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="2591" fragment=" of /nThat living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 80"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2228" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 68"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2831" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2826" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2827" fragment=" of/n That living mystic &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;" location="l. 86"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="2857" fragment=" &amp;lt;b&amp;gt;tree&amp;lt;/b&amp;gt;/nWithin whose" location="l. 86"/>
+ 	</test>
+ 	<test query="stars">
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="178" fragment=",/n And the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1732" fragment=" as when/n The &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 54"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1935" fragment=" the voice the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 59"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="179" fragment=",/n And the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1739" fragment="/n The &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 54"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1934" fragment=" the voice the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;/n Had" location="l. 59"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="179" fragment=",/n And the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1732" fragment=" as when/n The &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 54"/>
+ 		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1935" fragment=" the voice the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 59"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="179" fragment=",/n And the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1733" fragment=" as when/n The &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 54"/>
+ 		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1936" fragment=" the voice of the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt;" location="l. 59"/>
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="185" fragment=",/nAnd the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; in her hair were" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1935" fragment=", as when/nThe &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 60"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="177" fragment="/n And the &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; in her" location="l. 6"/>
+ 		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1556" fragment="/n The &amp;lt;b&amp;gt;stars&amp;lt;/b&amp;gt; sang" location="l. 48"/>
+ 	</test>
+ 	<test query="clover">
+ 	</test>
+ 	<test query="her">
+		<result doc="/tmp/juxta/docs/1-1847.princefrag.rad.xml" position="0" fragment="/n/nAround &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 1"/>
+		<result doc="/tmp/juxta/docs/1-1847.princefrag.rad.xml" position="157" fragment="/n Went by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; like" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="79" fragment=" of Heaven:/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; blue" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="173" fragment=" in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="185" fragment=",/nAnd the stars in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair were" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="217" fragment=" seven./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="335" fragment=" meetly worn;/nAnd &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="356" fragment=" hair, lying down &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="511" fragment=" that still look of &amp;lt;b&amp;gt;her's&amp;lt;/b&amp;gt;" location="l. 16"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="556" fragment=" left, &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/nHad" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="694" fragment=", — &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair/nFell all" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1186" fragment="./n/nBut in those tracts, with &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 37"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1373" fragment=" hardly, some of &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; new" location="l. 43"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1539" fragment=" by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; like thin" location="l. 48"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1637" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bosom's pressure" location="l. 51"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1739" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm" location="l. 54"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="1839" fragment=" the worlds. &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt;" location="l. 57"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="2937" fragment=".”/n/n(Alas! to &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; wise" location="l. 91"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="3010" fragment=": they trembled on &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; sense" location="l. 93"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="3038" fragment=", — /n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; voice had" location="l. 94"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="3212" fragment=" in trust? And for &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; sake" location="l. 99"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="3408" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five handmaidens" location="l. 105"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4595" fragment=" past &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;, filled" location="l. 142"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4635" fragment=" level lapse./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes" location="l. 144"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4673" fragment=" smiled./n/n(I saw &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; smile" location="l. 145"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4776" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; arms along" location="l. 147"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4811" fragment=",/nAnd laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; face between" location="l. 149"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4838" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hands,/nAnd wept" location="l. 149"/>
+		<result doc="/tmp/juxta/docs/ap4.g415.1.rad.xml" position="4858" fragment=". (I heard &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; tears.)/n" location="l. 150"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="70" fragment=" of Heaven;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes were" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="159" fragment=" lilies in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="194" fragment=" in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair were seven" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="217" fragment="./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe, ungirt" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="334" fragment=" meetly worn;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; hair" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="356" fragment=" that lay along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="556" fragment=" left, &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/n Had" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="679" fragment=" lean'd o'er me—&amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1198" fragment=", some of &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; new" location="l. 37"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1336" fragment=" to God,/n Went by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 42"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1437" fragment=" charm;/nUntil &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 45"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1536" fragment="/n Along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm" location="l. 48"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1639" fragment=" all the worlds. &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt;" location="l. 51"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="1915" fragment="./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; voice was like" location="l. 59"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2031" fragment=",/n Strove not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; accents" location="l. 62"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="2136" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; steps to reach" location="l. 65"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="3433" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five" location="l. 105"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4436" fragment=" thrilled towards &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 136"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4493" fragment=" flight./n &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes prayed" location="l. 138"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4539" fragment=" saw &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; smile" location="l. 139"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4619" fragment=" cast &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; arms along" location="l. 141"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4651" fragment=" barriers,/nAnd laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; face" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4679" fragment=" between &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hands" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.1pr.trox.rad.xml" position="4718" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; tears.)/n" location="l. 144"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="71" fragment=" of Heaven;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes were" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="154" fragment=" three lilies in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="195" fragment=" in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair were seven" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="218" fragment="./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe, ungirt" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="333" fragment=" meetly worn;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; hair" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="355" fragment=" that lay along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; back" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="555" fragment=" left, &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/n Had" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="678" fragment=" leaned o'er me—&amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1198" fragment=", some of &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; new" location="l. 37"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1336" fragment=" to God/n Went by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 42"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1436" fragment=" charm;/nUntil &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bosom" location="l. 45"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1535" fragment="/n Along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm" location="l. 48"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1638" fragment=" all the worlds. &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt;" location="l. 51"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="1896" fragment=" the still weather./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt;" location="l. 59"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2035" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; accents" location="l. 62"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="2132" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; steps to reach my" location="l. 65"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="3427" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five handmaidens" location="l. 105"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4439" fragment=" towards &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;, fill'd" location="l. 136"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4494" fragment="./n &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes prayed" location="l. 138"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4537" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; smile.) But soon" location="l. 139"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4618" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; arms along" location="l. 141"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4654" fragment=",/nAnd laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; face" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4673" fragment=" between &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hands" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.1stedn.rad.xml" position="4691" fragment=",/n And wept. (I heard &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 144"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="71" fragment=" of Heaven;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes were" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="154" fragment=" three lilies in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="195" fragment=" in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair were seven" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="218" fragment="./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe, ungirt" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="333" fragment=" meetly worn;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; hair" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="355" fragment=" that lay along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; back" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="555" fragment=" left, &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/n Had" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="678" fragment=" leaned o'er me—&amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1198" fragment=", some of &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; new" location="l. 37"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1337" fragment=" to God/n Went by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 42"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1437" fragment=" charm;/nUntil &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 45"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1536" fragment="/n Along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm" location="l. 48"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1639" fragment=" all the worlds. &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt;" location="l. 51"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="1915" fragment="./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; voice was like" location="l. 59"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2036" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; accents" location="l. 62"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="2133" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; steps to reach my" location="l. 65"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="3428" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five handmaidens" location="l. 105"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4431" fragment=" thrilled towards &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 136"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4493" fragment=" flight./n &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes prayed" location="l. 138"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4539" fragment=" saw &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; smile" location="l. 139"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4619" fragment=" cast &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; arms along" location="l. 141"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4651" fragment=" barriers,/nAnd laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; face" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4679" fragment=" between &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hands" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1870.2ndedn.prin.rad.xml" position="4718" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; tears.)/n" location="l. 144"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="71" fragment=" of Heaven;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes were" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="154" fragment=" three lilies in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="195" fragment=" in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair were seven" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="218" fragment="./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe, ungirt" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="333" fragment=" meetly worn;/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; hair" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="355" fragment=" that lay along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; back" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="555" fragment=" left, &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/n Had" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="678" fragment=" leaned o'er me—&amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1178" fragment=" midge./n/nAround &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 37"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1338" fragment=" to God/n Went by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 42"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1438" fragment=" charm;/nUntil &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 45"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1537" fragment="/n Along &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm" location="l. 48"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1655" fragment=". &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; gaze still strove" location="l. 51"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="1916" fragment="./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; voice was like" location="l. 59"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="2031" fragment=",/n Strove not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; accents" location="l. 62"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="2137" fragment=" not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; steps" location="l. 65"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="3435" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five" location="l. 105"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4453" fragment=" towards &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;, fill'd" location="l. 136"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4495" fragment=" level flight./n &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes" location="l. 138"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4535" fragment=" smil'd./n/n(I saw &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 139"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4613" fragment=":/nAnd then she cast &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 141"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4678" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; face between &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 143"/>
+		<result doc="/tmp/juxta/docs/1-1881.1stedn.rad.xml" position="4723" fragment=". (I heard &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; tears.)/n" location="l. 144"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="70" fragment=" of Heaven./n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes knew" location="l. 3"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="158" fragment=" lilies in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hand" location="l. 5"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="177" fragment="/n And the stars in &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 6"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="215" fragment="./n/n&amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; robe, ungirt from" location="l. 7"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="336" fragment=" worn;/nAnd &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; hair" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="355" fragment=" lying down &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; back" location="l. 11"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="555" fragment=", &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; day/n Had counted" location="l. 17"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="676" fragment=" leaned o'er me,—&amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 21"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="999" fragment=", some of &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; new" location="l. 31"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1156" fragment=" by &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; like thin" location="l. 36"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1235" fragment=" waste calm,/nTill &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 39"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1356" fragment=" &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; bended arm./n/nFrom" location="l. 42"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="1455" fragment=" the worlds. &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; gaze" location="l. 45"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2615" fragment=",/n Strove not &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 80"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="2831" fragment=" is,/nWith &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; five" location="l. 87"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3628" fragment=":/n The light thrilled past &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 112"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3694" fragment=" lapse./n &amp;lt;b&amp;gt;Her&amp;lt;/b&amp;gt; eyes prayed" location="l. 114"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3739" fragment=" saw &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; smile" location="l. 115"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3807" fragment="./nAnd then she laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; arms" location="l. 117"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3854" fragment=" barriers,/nAnd laid &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 119"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3877" fragment=" face between &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt;" location="l. 119"/>
+		<result doc="/tmp/juxta/docs/1-1847.morgms.rad.xml" position="3915" fragment=" heard &amp;lt;b&amp;gt;her&amp;lt;/b&amp;gt; tears.)/n" location="l. 120"/>
+	</test>
+</top>
+
+

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top>
+ 	<test id="collatebaseline0" base="0" witness="1">
+ 		<result basename="file4.txt" baseoffset="3" baselength="4" witnessname="file5.txt" witnessoffset="3" witnesslength="28" type="CHANGE" distance="25" />
+		<result basename="file4.txt" baseoffset="32" baselength="1" witnessname="file5.txt" witnessoffset="56" witnesslength="2" type="CHANGE" distance="1" />
+ 		<result basename="file4.txt" baseoffset="45" baselength="4" witnessname="file5.txt" witnessoffset="70" witnesslength="4" type="CHANGE" distance="1" />
+ 		<result basename="file4.txt" baseoffset="58" baselength="31" witnessname="file5.txt" witnessoffset="83" witnesslength="5" type="CHANGE" distance="26" />
+ 	</test>
+ 	<test id="collatebaseline1" base="1" witness="0">
+ 		<result basename="file5.txt" baseoffset="3" baselength="28" witnessname="file4.txt" witnessoffset="3" witnesslength="4" type="CHANGE" distance="25" /> 
+		<result basename="file5.txt" baseoffset="56" baselength="2" witnessname="file4.txt" witnessoffset="32" witnesslength="1" type="CHANGE" distance="1" />
+ 		<result basename="file5.txt" baseoffset="70" baselength="4" witnessname="file4.txt" witnessoffset="45" witnesslength="4" type="CHANGE" distance="1" />
+ 		<result basename="file5.txt" baseoffset="83" baselength="5" witnessname="file4.txt" witnessoffset="58" witnesslength="31" type="CHANGE" distance="26" />
+ 	</test>
+ 	<test id="baseline0" base="0" witness="1">
+ 		<result basename="file1.txt" baseoffset="3" baselength="4" witnessname="file2.txt" witnessoffset="3" witnesslength="28" type="CHANGE" distance="25" />
+		<result basename="file1.txt" baseoffset="32" baselength="1" witnessname="file2.txt" witnessoffset="56" witnesslength="2" type="CHANGE" distance="1" />
+ 		<result basename="file1.txt" baseoffset="45" baselength="4" witnessname="file2.txt" witnessoffset="70" witnesslength="4" type="CHANGE" distance="1" />
+ 		<result basename="file1.txt" baseoffset="58" baselength="31" witnessname="file2.txt" witnessoffset="83" witnesslength="5" type="CHANGE" distance="26" />
+ 	</test>
+ 	<test id="baseline00" base="0" witness="0">
+ 	</test>
+ 	<test id="baseline1" base="1" witness="0">
+ 		<result basename="file2.txt" baseoffset="3" baselength="28" witnessname="file1.txt" witnessoffset="3" witnesslength="4" type="CHANGE" distance="25" /> 
+		<result basename="file2.txt" baseoffset="56" baselength="2" witnessname="file1.txt" witnessoffset="32" witnesslength="1" type="CHANGE" distance="1" />
+ 		<result basename="file2.txt" baseoffset="70" baselength="4" witnessname="file1.txt" witnessoffset="45" witnesslength="4" type="CHANGE" distance="1" />
+ 		<result basename="file2.txt" baseoffset="83" baselength="5" witnessname="file1.txt" witnessoffset="58" witnesslength="31" type="CHANGE" distance="26" />
+ 	</test>
+ 	<test id="baseline11" base="1" witness="1">
+ 	</test>
+	<test id="firstmove0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="3" baselength="4" witnessname="file2.txt" witnessoffset="3" witnesslength="11" type="CHANGE" distance="25" />
+		<result basename="file1.txt" baseoffset="32" baselength="1" witnessname="file2.txt" witnessoffset="56" witnesslength="2" type="CHANGE" distance="1" />
+		<result basename="file1.txt" baseoffset="45" baselength="4" witnessname="file2.txt" witnessoffset="70" witnesslength="4" type="CHANGE" distance="1" />
+		<result basename="file1.txt" baseoffset="58" baselength="12" witnessname="file2.txt" witnessoffset="83" witnesslength="5" type="CHANGE" distance="26" />
+		<result basename="file1.txt" baseoffset="83" baselength="6" witnessname="file2.txt" witnessoffset="27" witnesslength="4" type="CHANGE" distance="3" />
+ 	</test>
+	<test id="firstmove1" base="1" witness="0">
+ 		<result basename="file2.txt" baseoffset="3" baselength="4" witnessname="file1.txt" witnessoffset="3" witnesslength="4" type="CHANGE" distance="25" />
+ 		<result basename="file2.txt" baseoffset="14" baselength="22" witnessname="file1.txt" witnessoffset="70" witnesslength="22" type="MOVE" distance="1" />
+ 		<result basename="file2.txt" baseoffset="45" baselength="4" witnessname="file1.txt" witnessoffset="70" witnesslength="4" type="CHANGE" distance="1" />
+ 	</test>
+	<test id="compare13" base="0" witness="2">
+		<result basename="file1.txt" baseoffset="0" baselength="7" witnessname="file3.txt" witnessoffset="0" witnesslength="5" type="CHANGE" distance="5" />
+		<result basename="file1.txt" baseoffset="34" baselength="0" witnessname="file3.txt" witnessoffset="33" witnesslength="22" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="23" witnessname="file3.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+ 	</test>
+	<test id="compare23" base="1" witness="2">
+ 		<result basename="file2.txt" baseoffset="0" baselength="2" witnessname="file3.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="13" baselength="0" witnessname="file3.txt" witnessoffset="11" witnesslength="18" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="37" baselength="57" witnessname="file3.txt" witnessoffset="56" witnesslength="36" type="CHANGE" distance="24" />
+ 	</test>
+	<test id="compare12" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file2.txt" witnessoffset="36" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file2.txt" witnessoffset="36" witnesslength="57" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="compare21" base="1" witness="0">
+		<result basename="file2.txt" baseoffset="36" baselength="57" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="36" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="remove0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="0" baselength="7" witnessname="file3.txt" witnessoffset="0" witnesslength="5" type="CHANGE" distance="5" />
+		<result basename="file1.txt" baseoffset="34" baselength="0" witnessname="file3.txt" witnessoffset="33" witnesslength="22" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="23" witnessname="file3.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+ 	</test>
+	<test id="remove1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="0" baselength="5" witnessname="file1.txt" witnessoffset="0" witnesslength="7" type="CHANGE" distance="5" />
+		<result basename="file3.txt" baseoffset="33" baselength="22" witnessname="file1.txt" witnessoffset="34" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="92" baselength="0" witnessname="file1.txt" witnessoffset="70" witnesslength="7" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="read2nd0" base="0" witness="2">
+		<result basename="file1.txt" baseoffset="3" baselength="4" witnessname="file2.txt" witnessoffset="3" witnesslength="28" type="CHANGE" distance="25" />
+		<result basename="file1.txt" baseoffset="45" baselength="4" witnessname="file2.txt" witnessoffset="70" witnesslength="4" type="CHANGE" distance="1" />
+		<result basename="file1.txt" baseoffset="58" baselength="29" witnessname="file2.txt" witnessoffset="83" witnesslength="5" type="CHANGE" distance="24" />
+ 	</test>
+	<test id="read2nd1" base="2" witness="0">
+		<result basename="file2.txt" baseoffset="3" baselength="28" witnessname="file1.txt" witnessoffset="3" witnesslength="4" type="CHANGE" distance="25" />
+		<result basename="file2.txt" baseoffset="70" baselength="4" witnessname="file1.txt" witnessoffset="45" witnesslength="4" type="CHANGE" distance="1" />
+		<result basename="file2.txt" baseoffset="83" baselength="5" witnessname="file1.txt" witnessoffset="58" witnesslength="6" type="CHANGE" distance="1" />
+ 	</test>
+	<test id="read2nd2" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="0" baselength="7" witnessname="file3.txt" witnessoffset="0" witnesslength="5" type="CHANGE" distance="5" />
+		<result basename="file1.txt" baseoffset="34" baselength="0" witnessname="file3.txt" witnessoffset="33" witnesslength="22" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="23" witnessname="file3.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+ 	</test>
+	<test id="mismatch0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="10" baselength="9" witnessname="file3.txt" witnessoffset="18" witnesslength="4" type="CHANGE" distance="8" />
+		<result basename="file1.txt" baseoffset="20" baselength="50" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="22" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="69" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="mismatch1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="18" baselength="4" witnessname="file1.txt" witnessoffset="10" witnesslength="9" type="CHANGE" distance="8" />
+		<result basename="file3.txt" baseoffset="22" baselength="69" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="50" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="70" witnesslength="22" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="sameplace0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="0" baselength="10" witnessname="file3.txt" witnessoffset="0" witnesslength="10" type="CHANGE" distance="7" />
+		<result basename="file1.txt" baseoffset="10" baselength="10" witnessname="file3.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="50" witnessname="file3.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="22" witnessname="file3.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="10" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="12" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="10" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="69" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="sameplace1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="0" baselength="10" witnessname="file1.txt" witnessoffset="0" witnesslength="10" type="CHANGE" distance="7" />
+		<result basename="file3.txt" baseoffset="10" baselength="12" witnessname="file1.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="69" witnessname="file1.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="10" baselength="0" witnessname="file1.txt" witnessoffset="10" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="10" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="50" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="10" baselength="0" witnessname="file1.txt" witnessoffset="70" witnesslength="22" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="10" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="twomoves0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="0" baselength="10" witnessname="file3.txt" witnessoffset="0" witnesslength="10" type="CHANGE" distance="7" />
+		<result basename="file1.txt" baseoffset="10" baselength="9" witnessname="file3.txt" witnessoffset="42" witnesslength="49" type="CHANGE" distance="45" />
+		<result basename="file1.txt" baseoffset="20" baselength="50" witnessname="file3.txt" witnessoffset="91" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="22" witnessname="file3.txt" witnessoffset="15" witnesslength="7" type="CHANGE" distance="19" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="10" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="4" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="14" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="4" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="twomoves1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="0" baselength="10" witnessname="file1.txt" witnessoffset="0" witnesslength="10" type="CHANGE" distance="7" />
+		<result basename="file3.txt" baseoffset="10" baselength="4" witnessname="file1.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="15" baselength="7" witnessname="file1.txt" witnessoffset="70" witnesslength="22" type="CHANGE" distance="19" />
+		<result basename="file3.txt" baseoffset="22" baselength="14" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="4" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="42" baselength="49" witnessname="file1.txt" witnessoffset="10" witnesslength="9" type="CHANGE" distance="45" />
+		<result basename="file3.txt" baseoffset="91" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="50" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="moveentire0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="3" baselength="7" witnessname="file3.txt" witnessoffset="18" witnesslength="4" type="CHANGE" distance="6" />
+		<result basename="file1.txt" baseoffset="10" baselength="9" witnessname="file3.txt" witnessoffset="42" witnesslength="49" type="CHANGE" distance="45" />
+		<result basename="file1.txt" baseoffset="20" baselength="72" witnessname="file3.txt" witnessoffset="91" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="91" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="4" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="10" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="14" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="10" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="4" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="moveentire1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="10" baselength="4" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="18" baselength="4" witnessname="file1.txt" witnessoffset="3" witnesslength="7" type="CHANGE" distance="6" />
+		<result basename="file3.txt" baseoffset="22" baselength="14" witnessname="file1.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="4" witnessname="file1.txt" witnessoffset="10" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="42" baselength="49" witnessname="file1.txt" witnessoffset="10" witnesslength="9" type="CHANGE" distance="45" />
+		<result basename="file3.txt" baseoffset="91" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="72" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="91" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="overlap0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="10" baselength="5" witnessname="file3.txt" witnessoffset="42" witnesslength="49" type="CHANGE" distance="45" />
+		<result basename="file1.txt" baseoffset="17" baselength="2" witnessname="file3.txt" witnessoffset="25" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file1.txt" baseoffset="20" baselength="5" witnessname="file3.txt" witnessoffset="30" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="25" baselength="67" witnessname="file3.txt" witnessoffset="30" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="12" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="1" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="4" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="overlap1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="10" baselength="12" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="3" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="25" baselength="4" witnessname="file1.txt" witnessoffset="17" witnesslength="2" type="CHANGE" distance="4" />
+		<result basename="file3.txt" baseoffset="30" baselength="5" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="35" baselength="1" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="4" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="42" baselength="49" witnessname="file1.txt" witnessoffset="10" witnesslength="5" type="CHANGE" distance="45" />
+		<result basename="file3.txt" baseoffset="30" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="0" witnessname="file1.txt" witnessoffset="25" witnesslength="67" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="zerolengthbase0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="10" baselength="9" witnessname="file3.txt" witnessoffset="20" witnesslength="2" type="CHANGE" distance="9" />
+		<result basename="file1.txt" baseoffset="20" baselength="5" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="25" baselength="67" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="8" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="1" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="55" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="zerolengthbase1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="10" baselength="10" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="2" witnessname="file1.txt" witnessoffset="10" witnesslength="9" type="CHANGE" distance="9" />
+		<result basename="file3.txt" baseoffset="22" baselength="8" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="5" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="35" baselength="1" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="55" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="25" witnesslength="67" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="zerolengthwitness0" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="10" baselength="9" witnessname="file3.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="5" witnessname="file3.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="25" baselength="67" witnessname="file3.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="20" witnesslength="2" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="8" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="1" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="20" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="55" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="zerolengthwitness1" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="10" baselength="10" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="0" witnessname="file1.txt" witnessoffset="10" witnesslength="9" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="2" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="8" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="5" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="35" baselength="1" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="55" witnessname="file1.txt" witnessoffset="20" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="0" witnessname="file1.txt" witnessoffset="25" witnesslength="67" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+
+	<test id="threeway12" base="0" witness="1">
+		<result basename="file1.txt" baseoffset="20" baselength="5" witnessname="file3.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="25" baselength="45" witnessname="file3.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="70" baselength="22" witnessname="file3.txt" witnessoffset="33" witnesslength="2" type="CHANGE" distance="20" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="20" witnesslength="2" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="8" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="1" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="19" type="INSERT" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file3.txt" witnessoffset="55" witnesslength="36" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="threeway13" base="0" witness="2">
+		<result basename="file1.txt" baseoffset="20" baselength="5" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="25" baselength="45" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file2.txt" witnessoffset="36" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file1.txt" baseoffset="92" baselength="0" witnessname="file2.txt" witnessoffset="36" witnesslength="57" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="threeway21" base="1" witness="0">
+		<result basename="file3.txt" baseoffset="10" baselength="10" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="2" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="8" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="3" witnessname="file1.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="33" baselength="2" witnessname="file1.txt" witnessoffset="70" witnesslength="22" type="CHANGE" distance="20" />
+		<result basename="file3.txt" baseoffset="35" baselength="1" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="19" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="55" baselength="36" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="0" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="0" baselength="0" witnessname="file1.txt" witnessoffset="25" witnesslength="45" type="INSERT" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="35" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="threeway23" base="1" witness="2">
+		<result basename="file3.txt" baseoffset="10" baselength="10" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="20" baselength="2" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="22" baselength="8" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="30" baselength="3" witnessname="file2.txt" witnessoffset="0" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="33" baselength="2" witnessname="file2.txt" witnessoffset="14" witnesslength="22" type="CHANGE" distance="20" />
+		<result basename="file3.txt" baseoffset="35" baselength="1" witnessname="file2.txt" witnessoffset="36" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="36" baselength="19" witnessname="file2.txt" witnessoffset="36" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="55" baselength="36" witnessname="file2.txt" witnessoffset="36" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file3.txt" baseoffset="35" baselength="0" witnessname="file2.txt" witnessoffset="36" witnesslength="57" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="threeway31" base="2" witness="0">
+		<result basename="file2.txt" baseoffset="36" baselength="57" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file1.txt" witnessoffset="20" witnesslength="5" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file1.txt" witnessoffset="25" witnesslength="45" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="36" baselength="0" witnessname="file1.txt" witnessoffset="92" witnesslength="0" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="threeway32" base="2" witness="1">
+		<result basename="file2.txt" baseoffset="14" baselength="22" witnessname="file3.txt" witnessoffset="33" witnesslength="2" type="CHANGE" distance="20" />
+		<result basename="file2.txt" baseoffset="36" baselength="57" witnessname="file3.txt" witnessoffset="35" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="10" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="20" witnesslength="2" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="22" witnesslength="8" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="0" baselength="0" witnessname="file3.txt" witnessoffset="30" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="36" baselength="0" witnessname="file3.txt" witnessoffset="35" witnesslength="1" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="36" baselength="0" witnessname="file3.txt" witnessoffset="36" witnesslength="19" type="INSERT" distance="2147483647" />
+		<result basename="file2.txt" baseoffset="36" baselength="0" witnessname="file3.txt" witnessoffset="55" witnesslength="36" type="INSERT" distance="2147483647" />
+ 	</test>
+	<test id="ram_baseline0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+	</test>
+	<test id="ram_baseline1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="118" witnesslength="19" type="CHANGE" distance="10" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="215" baselength="416" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+	</test>
+	<test id="ram_encompass0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="71" baselength="131" witnessname="file7.txt" witnessoffset="75" witnesslength="0" type="DELETE" distance="2147483647" />
+		 <result basename="file6.txt" baseoffset="9" baselength="0" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="75" witnesslength="118" type="CHANGE" distance="113" />
+	</test>
+	<test id="ram_encompass1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="215" baselength="416" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="75" baselength="0" witnessname="file6.txt" witnessoffset="71" witnesslength="131" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="75" baselength="118" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="113" />
+	</test>
+	<test id="ram_overlap_top0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="308" witnesslength="323" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="188" baselength="35" witnessname="file7.txt" witnessoffset="180" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="0" witnessname="file7.txt" witnessoffset="879" witnesslength="26" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="17" witnessname="file7.txt" witnessoffset="181" witnesslength="14" type="CHANGE" distance="14" />
+		<result basename="file6.txt" baseoffset="478" baselength="5" witnessname="file7.txt" witnessoffset="199" witnesslength="109" type="CHANGE" distance="104" />
+	</test>
+	<test id="ram_overlap_top1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="118" witnesslength="19" type="CHANGE" distance="10" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="308" baselength="323" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="879" baselength="26" witnessname="file6.txt" witnessoffset="457" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="180" baselength="0" witnessname="file6.txt" witnessoffset="188" witnesslength="35" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="181" baselength="14" witnessname="file6.txt" witnessoffset="457" witnesslength="17" type="CHANGE" distance="14" />
+		<result basename="file7.txt" baseoffset="199" baselength="109" witnessname="file6.txt" witnessoffset="478" witnesslength="5" type="CHANGE" distance="104" />
+	</test>
+	<test id="ram_overlap_bottom0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="351" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="223" baselength="30" witnessname="file7.txt" witnessoffset="566" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="0" witnessname="file7.txt" witnessoffset="879" witnesslength="26" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="3" witnessname="file7.txt" witnessoffset="566" witnesslength="81" type="CHANGE" distance="79" />
+		<result basename="file6.txt" baseoffset="464" baselength="19" witnessname="file7.txt" witnessoffset="651" witnesslength="15" type="CHANGE" distance="14" />
+	</test>
+	<test id="ram_overlap_bottom1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="118" witnesslength="19" type="CHANGE" distance="10" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="215" baselength="351" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="879" baselength="26" witnessname="file6.txt" witnessoffset="457" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="566" baselength="0" witnessname="file6.txt" witnessoffset="223" witnesslength="30" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="566" baselength="81" witnessname="file6.txt" witnessoffset="457" witnesslength="3" type="CHANGE" distance="79" />
+		<result basename="file7.txt" baseoffset="651" baselength="15" witnessname="file6.txt" witnessoffset="464" witnesslength="19" type="CHANGE" distance="14" />
+	</test>
+	<test id="ram_inside_move0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="66" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="395" witnesslength="236" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="0" witnessname="file7.txt" witnessoffset="879" witnesslength="26" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="457" baselength="0" witnessname="file7.txt" witnessoffset="281" witnesslength="27" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="461" baselength="22" witnessname="file7.txt" witnessoffset="314" witnesslength="80" type="CHANGE" distance="64" />
+	</test>
+	<test id="ram_inside_move1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="118" witnesslength="19" type="CHANGE" distance="10" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="215" baselength="66" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="395" baselength="236" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="879" baselength="26" witnessname="file6.txt" witnessoffset="457" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="281" baselength="27" witnessname="file6.txt" witnessoffset="457" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="314" baselength="80" witnessname="file6.txt" witnessoffset="461" witnesslength="22" type="CHANGE" distance="64" />
+	</test>
+	<test id="ram_inside_change0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="3" witnessname="file7.txt" witnessoffset="118" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="131" baselength="6" witnessname="file7.txt" witnessoffset="118" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="230" baselength="12" witnessname="file7.txt" witnessoffset="643" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="121" baselength="0" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="126" baselength="5" witnessname="file7.txt" witnessoffset="648" witnesslength="7" type="CHANGE" distance="6" />
+	</test>
+	<test id="ram_inside_change1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="0" witnessname="file6.txt" witnessoffset="118" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="118" baselength="0" witnessname="file6.txt" witnessoffset="131" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="215" baselength="416" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="720" baselength="0" witnessname="file6.txt" witnessoffset="306" witnesslength="6" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="762" baselength="6" witnessname="file6.txt" witnessoffset="342" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="121" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="643" baselength="0" witnessname="file6.txt" witnessoffset="230" witnesslength="12" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="648" baselength="7" witnessname="file6.txt" witnessoffset="126" witnesslength="5" type="CHANGE" distance="6" />
+	</test>
+	<test id="ram_insert_change0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="106" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="350" witnesslength="281" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="280" baselength="0" witnessname="file7.txt" witnessoffset="692" witnesslength="85" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="280" baselength="76" witnessname="file7.txt" witnessoffset="321" witnesslength="29" type="CHANGE" distance="62" />
+	</test>
+	<test id="ram_insert_change1" base="1" witness="0">
+		<result basename="file7.txt" baseoffset="9" baselength="11" witnessname="file6.txt" witnessoffset="9" witnesslength="9" type="CHANGE" distance="6" />
+		<result basename="file7.txt" baseoffset="118" baselength="15" witnessname="file6.txt" witnessoffset="118" witnesslength="19" type="CHANGE" distance="10" />
+		<result basename="file7.txt" baseoffset="144" baselength="8" witnessname="file6.txt" witnessoffset="149" witnesslength="9" type="CHANGE" distance="7" />
+		<result basename="file7.txt" baseoffset="158" baselength="3" witnessname="file6.txt" witnessoffset="164" witnesslength="4" type="CHANGE" distance="4" />
+		<result basename="file7.txt" baseoffset="166" baselength="5" witnessname="file6.txt" witnessoffset="173" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file7.txt" baseoffset="215" baselength="106" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="350" baselength="281" witnessname="file6.txt" witnessoffset="223" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="739" baselength="10" witnessname="file6.txt" witnessoffset="331" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="971" baselength="0" witnessname="file6.txt" witnessoffset="549" witnesslength="3" type="INSERT" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="692" baselength="85" witnessname="file6.txt" witnessoffset="280" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file7.txt" baseoffset="321" baselength="29" witnessname="file6.txt" witnessoffset="280" witnesslength="76" type="CHANGE" distance="62" />
+	</test>
+	<test id="ram_extra_delete_bug0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="212" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="521" baselength="0" witnessname="file7.txt" witnessoffset="943" witnesslength="26" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="521" baselength="26" witnessname="file7.txt" witnessoffset="427" witnesslength="204" type="CHANGE" distance="2500" />
+	</test>
+	<test id="ram_start_move_with_a_space0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="198" baselength="13" witnessname="file7.txt" witnessoffset="191" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="43" baselength="0" witnessname="file7.txt" witnessoffset="45" witnesslength="12" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="44" baselength="12" witnessname="file7.txt" witnessoffset="191" witnesslength="13" type="CHANGE" distance="11" />
+	</test>
+	<test id="ram_move_to_identical_offsets_on_both_sides0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+	</test>
+	<test id="ram_end_move_with_multiple_white_space0" base="0" witness="1">
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="118" baselength="19" witnessname="file7.txt" witnessoffset="118" witnesslength="15" type="CHANGE" distance="10" />
+		<result basename="file6.txt" baseoffset="149" baselength="9" witnessname="file7.txt" witnessoffset="144" witnesslength="8" type="CHANGE" distance="7" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="259" baselength="12" witnessname="file7.txt" witnessoffset="673" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="188" baselength="0" witnessname="file7.txt" witnessoffset="181" witnesslength="31" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="188" baselength="31" witnessname="file7.txt" witnessoffset="673" witnesslength="12" type="CHANGE" distance="25" />
+	</test>
+	<test id="ram_end_move_with_a_change_and_white_space0" base="0" witness="1" >
+		<result basename="file6.txt" baseoffset="9" baselength="9" witnessname="file7.txt" witnessoffset="9" witnesslength="11" type="CHANGE" distance="6" />
+		<result basename="file6.txt" baseoffset="164" baselength="4" witnessname="file7.txt" witnessoffset="158" witnesslength="3" type="CHANGE" distance="4" />
+		<result basename="file6.txt" baseoffset="173" baselength="5" witnessname="file7.txt" witnessoffset="166" witnesslength="5" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="223" baselength="0" witnessname="file7.txt" witnessoffset="215" witnesslength="416" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="306" baselength="6" witnessname="file7.txt" witnessoffset="720" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="331" baselength="0" witnessname="file7.txt" witnessoffset="739" witnesslength="10" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="342" baselength="6" witnessname="file7.txt" witnessoffset="762" witnesslength="6" type="CHANGE" distance="1" />
+		<result basename="file6.txt" baseoffset="549" baselength="3" witnessname="file7.txt" witnessoffset="971" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="118" baselength="40" witnessname="file7.txt" witnessoffset="118" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="390" baselength="0" witnessname="file7.txt" witnessoffset="811" witnesslength="23" type="INSERT" distance="2147483647" />
+		<result basename="file6.txt" baseoffset="390" baselength="23" witnessname="file7.txt" witnessoffset="118" witnesslength="34" type="CHANGE" distance="26" />
+	</test>
+	<test id="ram_welcome_baseline0" base="0" witness="1" >
+		<result basename="welcome1.txt" baseoffset="20" baselength="6" witnessname="welcome2.txt" witnessoffset="20" witnesslength="10" type="CHANGE" distance="6" />
+		<result basename="welcome1.txt" baseoffset="73" baselength="13" witnessname="welcome2.txt" witnessoffset="77" witnesslength="15" type="CHANGE" distance="8" />
+		<result basename="welcome1.txt" baseoffset="120" baselength="3" witnessname="welcome2.txt" witnessoffset="126" witnesslength="9" type="CHANGE" distance="8" />
+		<result basename="welcome1.txt" baseoffset="181" baselength="255" witnessname="welcome2.txt" witnessoffset="193" witnesslength="17" type="CHANGE" distance="2500" />
+		<result basename="welcome1.txt" baseoffset="563" baselength="0" witnessname="welcome2.txt" witnessoffset="337" witnesslength="32" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="568" baselength="16" witnessname="welcome2.txt" witnessoffset="375" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="604" baselength="0" witnessname="welcome2.txt" witnessoffset="394" witnesslength="7" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="708" baselength="17" witnessname="welcome2.txt" witnessoffset="505" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="735" baselength="6" witnessname="welcome2.txt" witnessoffset="512" witnesslength="7" type="CHANGE" distance="6" />
+		<result basename="welcome1.txt" baseoffset="780" baselength="175" witnessname="welcome2.txt" witnessoffset="558" witnesslength="129" type="CHANGE" distance="2500" />
+		<result basename="welcome1.txt" baseoffset="955" baselength="0" witnessname="welcome2.txt" witnessoffset="690" witnesslength="296" type="INSERT" distance="2147483647" />
+	</test>
+	<test id="ram_welcome_after_move0" base="0" witness="1" >
+		<result basename="welcome1.txt" baseoffset="20" baselength="6" witnessname="welcome2.txt" witnessoffset="20" witnesslength="10" type="CHANGE" distance="6" />
+		<result basename="welcome1.txt" baseoffset="73" baselength="13" witnessname="welcome2.txt" witnessoffset="77" witnesslength="15" type="CHANGE" distance="8" />
+		<result basename="welcome1.txt" baseoffset="120" baselength="3" witnessname="welcome2.txt" witnessoffset="126" witnesslength="9" type="CHANGE" distance="8" />
+		<result basename="welcome1.txt" baseoffset="410" baselength="26" witnessname="welcome2.txt" witnessoffset="193" witnesslength="17" type="CHANGE" distance="2500" />
+		<result basename="welcome1.txt" baseoffset="563" baselength="0" witnessname="welcome2.txt" witnessoffset="337" witnesslength="32" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="568" baselength="16" witnessname="welcome2.txt" witnessoffset="375" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="604" baselength="0" witnessname="welcome2.txt" witnessoffset="394" witnesslength="7" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="708" baselength="17" witnessname="welcome2.txt" witnessoffset="505" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="735" baselength="6" witnessname="welcome2.txt" witnessoffset="512" witnesslength="7" type="CHANGE" distance="6" />
+		<result basename="welcome1.txt" baseoffset="955" baselength="0" witnessname="welcome2.txt" witnessoffset="794" witnesslength="192" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="780" baselength="175" witnessname="welcome2.txt" witnessoffset="558" witnesslength="0" type="DELETE" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="173" baselength="0" witnessname="welcome2.txt" witnessoffset="185" witnesslength="25" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="217" baselength="0" witnessname="welcome2.txt" witnessoffset="602" witnesslength="4" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="220" baselength="2" witnessname="welcome2.txt" witnessoffset="610" witnesslength="4" type="CHANGE" distance="2" />
+		<result basename="welcome1.txt" baseoffset="234" baselength="0" witnessname="welcome2.txt" witnessoffset="624" witnesslength="7" type="INSERT" distance="2147483647" />
+		<result basename="welcome1.txt" baseoffset="268" baselength="3" witnessname="welcome2.txt" witnessoffset="668" witnesslength="7" type="CHANGE" distance="6" />
+		<result basename="welcome1.txt" baseoffset="284" baselength="19" witnessname="welcome2.txt" witnessoffset="690" witnesslength="0" type="DELETE" distance="2147483647" />
+	</test>
+</top>

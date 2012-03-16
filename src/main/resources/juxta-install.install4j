@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install4j version="@VERSION@">
+  <directoryPresets config="/Applications/eclipse/workspace/juxta/res/image_source/icons" />
+  <application name="Juxta" distributionSourceDir="" applicationId="5934-1748-1894-6995" mediaDir="/Users/dgran/tmp" mediaFilePattern="%SHORT_NAME%_%PLATFORM%_%VERSION%" compression="6" lzmaCompression="false" keepModificationTimes="false" shortName="Juxta" publisher="Applied Research in Patacriticism" publisherWeb="http://www.patacriticism.org/juxta" version="1.0.0" allPathsRelative="false" backupOnSave="false" autoSave="false" macSignature="????" javaMinVersion="1.4" javaMaxVersion="" allowBetaVM="true">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <variables />
+  </application>
+  <files>
+    <mountPoints>
+      <mountPoint name="" id="8" location="sample" mode="755" />
+      <mountPoint name="" id="9" location="res" mode="755" />
+      <mountPoint name="" id="10" location="lib" mode="755" />
+      <mountPoint name="" id="21" location="classes" mode="755" />
+    </mountPoints>
+    <entries>
+      <dirEntry mountPoint="8" file="/Applications/eclipse/workspace/juxta/sample" overwrite="4" shared="false" mode="644" dontUninstall="false" excludeSuffixes="CVS, *.DS_Store" dirMode="755">
+        <exclude>
+          <entry location="damozel" launcher="false" />
+          <entry location="hamlet" launcher="false" />
+          <entry location="old" launcher="false" />
+          <entry location="orchard-pit" launcher="false" />
+          <entry location="orchard-pit.jxt" launcher="false" />
+          <entry location="renaissance" launcher="false" />
+          <entry location="welcome" launcher="false" />
+          <entry location="xml-example" launcher="false" />
+        </exclude>
+      </dirEntry>
+      <dirEntry mountPoint="9" file="/Applications/eclipse/workspace/juxta/res" overwrite="4" shared="false" mode="644" dontUninstall="false" excludeSuffixes="CVS, *.DS_Store" dirMode="755">
+        <exclude>
+          <entry location="comparandtitle.cyan.gif" launcher="false" />
+          <entry location="comparandtitle.green.gif" launcher="false" />
+          <entry location="comparandtitle.purple.gif" launcher="false" />
+          <entry location="comparandtitle.red.gif" launcher="false" />
+          <entry location="comparandtitle.yellow.gif" launcher="false" />
+          <entry location="fitwindow.button.gif" launcher="false" />
+          <entry location="image_source" launcher="false" />
+          <entry location="juxta-install.install4j" launcher="false" />
+          <entry location="next.button.icon.gif" launcher="false" />
+          <entry location="prev.button.icon.gif" launcher="false" />
+          <entry location="zoom.in.button.gif" launcher="false" />
+          <entry location="zoom.out.button.gif" launcher="false" />
+        </exclude>
+      </dirEntry>
+      <dirEntry mountPoint="10" file="/Applications/eclipse/workspace/juxta/lib" overwrite="4" shared="false" mode="644" dontUninstall="false" excludeSuffixes="" dirMode="755">
+        <exclude>
+          <entry location="CVS" launcher="false" />
+        </exclude>
+      </dirEntry>
+      <dirEntry mountPoint="21" file="/Applications/eclipse/workspace/juxta/build/classes" overwrite="4" shared="false" mode="644" dontUninstall="false" excludeSuffixes="" dirMode="755">
+        <exclude />
+      </dirEntry>
+    </entries>
+    <components />
+  </files>
+  <launchers>
+    <launcher name="%SHORT_NAME%" id="2" external="false" excludeFromMenu="false" menuName="" icnsFile="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta.icns" pngIcon16File="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta_16x16.png" pngIcon32File="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta_32x32.png" macServiceDependencies="" allowUserChangeServiceStartType="true">
+      <executable name="%SHORT_NAME%" type="1" iconSet="true" iconFile="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta.ico" executableDir="." redirectStderr="true" stderrFile="error.log" redirectStdout="false" stdoutFile="output.log" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="">
+        <versionInfo include="false" fileVersion="" companyName="" fileDescription="" legalCopyright="" productVersion="" internalName="" />
+      </executable>
+      <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="361" height="115" bitmapFile="/Applications/eclipse/workspace/juxta/res/icons/splash.gif">
+        <text>
+          <statusLine x="263" y="96" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+          <versionLine x="291" y="4" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+        </text>
+      </splashScreen>
+      <java mainClass="edu.virginia.speclab.juxta.author.JuxtaAuthor" vmParameters="" arguments="" allowVMPassthroughParameters="true" minVersion="" maxVersion="" preferredVM="" allowBetaVM="false" jdkOnly="false">
+        <searchSequence>
+          <registry />
+          <envVar name="JAVA_HOME" />
+          <envVar name="JDK_HOME" />
+        </searchSequence>
+        <classPath>
+          <scanDirectory location="lib" failOnError="false" />
+          <directory location="classes" failOnError="false" />
+        </classPath>
+        <nativeLibraryDirectories />
+      </java>
+      <includedFiles />
+    </launcher>
+  </launchers>
+  <installerGui installerType="1" runUninstallerOnUpdate="false" addOnAppId="" suggestPreviousLocations="true" allowUnattendedInstall="false" useCustomHeaderImage="true" customHeaderImage="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta_48x48.gif" customSize="false" customWidth="500" customHeight="390">
+    <customCode preAction="false" preActionClass="" postAction="false" postActionClass="" preUninstallAction="false" preUninstallActionClass="" postUninstallAction="false" postUninstallActionClass="" initHandler="false" initHandlerClass="" directoryValidator="false" directoryValidatorClass="" installationHandler="false" installationHandlerClass="" />
+    <standardScreens>
+      <screen id="welcome" enabled="true" useCustomBanner="false" bannerImageFile="" background="255,255,255" />
+      <screen id="license" enabled="false" file="" />
+      <screen id="location" enabled="true" showSpace="true" suggestAppDir="true" />
+      <screen id="components" enabled="true" allSelected="true" firstMandatory="true">
+        <selectedComponents />
+        <mandatoryComponents />
+      </screen>
+      <screen id="programGroup" enabled="true" />
+      <screen id="fileAssociations" enabled="true">
+        <associations>
+          <association extension="jxt" description="Juxta Data File" winIconFile="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta.ico" launcherId="2" selected="true" windows="true" macos="true" macIconFile="/Applications/eclipse/workspace/juxta/res/image_source/icons/juxta.icns" />
+        </associations>
+      </screen>
+      <screen id="services" enabled="true" allSelected="true">
+        <selectedServiceLaunchers />
+      </screen>
+      <screen id="additionalTasks" enabled="true" customTasksPlacement="1">
+        <customTasks />
+      </screen>
+      <screen id="preInfo" enabled="false" file="" />
+      <screen id="install" enabled="true" />
+      <screen id="postInfo" enabled="false" file="" />
+      <screen id="finished" enabled="true" useCustomBanner="false" bannerImageFile="" background="255,255,255" />
+    </standardScreens>
+    <customScreens />
+  </installerGui>
+  <mediaSets>
+    <macos name="Mac OS X Single Bundle" id="5" mediaFileName="" installDir="Juxta-test" allLaunchers="false" customInstallBaseDir="" allowUserStartAfterFinish="true" launchExecutableId="2" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="2" desktopLauncherId="">
+      <selectedLaunchers>
+        <launcher id="2" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+    </macos>
+    <win32 name="Windows" id="26" mediaFileName="" installDir="Juxta" allLaunchers="true" includedJRE="windows-x86-1.4.2_10" manualJREEntry="false" bundleType="2" jreURL="http://faustroll.clas.virginia.edu/juxta-dist/windows-x86-1.4.2_10.tar.gz" jreFtpURL="" jreShared="false" customInstallBaseDir="" allowUserStartAfterFinish="true" launchExecutableId="2" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="2" desktopLauncherId="2" programGroup="Juxta" allowUserDisableStartMenuCreation="false" reboot="false" rebootUninstaller="false" modeQuickLaunchIon="1">
+      <selectedLaunchers />
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+      <additionalStartMenuEntries />
+    </win32>
+    <macosArchive name="Mac OS X Single Bundle Archive" id="30" mediaFileName="" installDir="Juxta" allLaunchers="false">
+      <selectedLaunchers>
+        <launcher id="2" />
+      </selectedLaunchers>
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+    </macosArchive>
+    <unixInstaller name="Unix Installer" id="41" mediaFileName="" installDir="Juxta" allLaunchers="true" includedJRE="" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" customInstallBaseDir="" allowUserStartAfterFinish="false" launchExecutableId="" createUninstallIcon="true" overrideLicenseFile="false" licenseFile="" overridePreInformationFile="false" preInformationFile="" overridePostInformationFile="false" postInformationFile="" adminRequired="false" languageID="en" modeDesktopIcon="1" desktopLauncherId="" customScriptMode="1" customScriptFile="">
+      <selectedLaunchers />
+      <messageSet language="English" />
+      <exclude />
+      <variables />
+      <excludedScreenIds />
+      <customScriptLines />
+    </unixInstaller>
+  </mediaSets>
+  <buildIds buildAll="false">
+    <mediaSet refId="26" />
+    <mediaSet refId="30" />
+    <mediaSet refId="41" />
+  </buildIds>
+</install4j>
+

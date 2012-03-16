@@ -1,0 +1,57 @@
+/*
+ * -----------------------------------------------------------------------------
+ *
+ * <p><b>License and Copyright: </b>The contents of this file are subject to the
+ * Educational Community License (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License
+ * at <a href="http://www.opensource.org/licenses/ecl1.txt">
+ * http://www.opensource.org/licenses/ecl1.txt.</a></p>
+ *
+ * <p>Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.</p>
+ *
+ * <p>The entire file consists of original code.  Copyright &copy; 2002-2006 by 
+ * The Rector and Visitors of the University of Virginia. 
+ * All rights reserved.</p>
+ *
+ * -----------------------------------------------------------------------------
+ */
+
+package edu.virginia.speclab.legacy.juxta.author.model;
+
+import java.util.LinkedList;
+
+import edu.virginia.speclab.legacy.diff.document.LocationMarker;
+
+public class LocationMarkerGenerator
+{
+    public static LinkedList generateNewLineMarkers( JuxtaDocument document )
+    {
+        LinkedList locationMarkers = new LinkedList();
+
+        String documentText = document.getDocumentText();
+        int lineNumber = 1;
+        boolean newLine = true;
+        for( int x = 0; x < documentText.length(); x++ )
+        {
+            char c = documentText.charAt(x);
+            
+            if( c == '\n' )
+            {
+                newLine = true;
+            }
+            else if( newLine )
+            {                
+                LocationMarker marker = new LocationMarker(Integer.toHexString(x),"","",lineNumber++,null,x);
+                int end = documentText.indexOf('\n', x);
+                if (end > 0)
+                	marker.setLength(end-x);
+                locationMarkers.add(marker);
+                newLine = false;
+            }
+        }
+        
+        return locationMarkers;        
+    }
+}
