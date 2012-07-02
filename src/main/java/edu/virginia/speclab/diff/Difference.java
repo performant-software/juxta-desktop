@@ -51,7 +51,7 @@ public class Difference implements Serializable
         this.baseRange = new OffsetRange(baseDocument);
         this.witnessRange = new OffsetRange(witnessDocument);
         this.type = type;
-        this.distance = -1;
+        this.distance = Integer.MAX_VALUE;
     }
 
 
@@ -60,7 +60,7 @@ public class Difference implements Serializable
         this.baseRange = new OffsetRange(baseDocumentID);
         this.witnessRange = new OffsetRange(witnessDocumentID);
         this.type = type;
-        this.distance = -1;
+        this.distance = Integer.MAX_VALUE;
     }
     
     public Difference duplicate()
