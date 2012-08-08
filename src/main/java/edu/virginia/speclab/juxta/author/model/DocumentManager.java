@@ -20,6 +20,7 @@
 package edu.virginia.speclab.juxta.author.model;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -35,6 +36,7 @@ import edu.virginia.speclab.diff.token.TokenizerSettings;
 import edu.virginia.speclab.exceptions.ReportedException;
 import edu.virginia.speclab.juxta.author.model.template.TemplateConfig;
 import edu.virginia.speclab.juxta.author.model.template.TemplateConfigManager;
+import edu.virginia.speclab.util.EncodingUtils;
 import edu.virginia.speclab.util.FileUtilities;
 
 /**
@@ -139,8 +141,8 @@ public class DocumentManager implements Serializable
      * @return
      * @throws ReportedException
      */
-    public JuxtaDocument addDocumentFragment( String documentName, String fileName, int fragmentStart, int fragmentLength, String encoding ) throws ReportedException {
-        JuxtaDocument doc = addDocument(documentName, fileName, encoding);
+    public JuxtaDocument addDocumentFragment( String documentName, String fileName, int fragmentStart, int fragmentLength) throws ReportedException {
+        JuxtaDocument doc = addDocument(documentName, fileName);
         doc.setActiveRange(new OffsetRange(doc, fragmentStart, fragmentStart + fragmentLength, OffsetRange.Space.ACTIVE));
         return doc;
     }
@@ -154,24 +156,29 @@ public class DocumentManager implements Serializable
      * @return A <code>JuxtaDocument</code> object for the specified file.
      * @throws ReportedException If there is an error loading the file.
      */
-    public JuxtaDocument constructDocument( String name, String file, String encoding) throws ReportedException
-    {   
-		JuxtaDocument doc = null;		
-		JuxtaDocumentFactory factory = new JuxtaDocumentFactory(encoding);
-
-		File originalFile = new File(file);
+    public JuxtaDocument constructDocument( String name, String file) throws ReportedException
+    {  
+		File srcFile = new File(file);
+		if( srcFile.length()>MAX_FILE_SIZE) {
+            throw new ReportedException(new Exception(),"The size of the file \"" + srcFile.getName() +
+                    "\" is " + Long.toString(srcFile.length())+ " bytes, which is too large to load.\nTry breaking the larger file into several files that are each smaller than " + Long.toString(MAX_FILE_SIZE)+ " bytes.");
+        }
 		
-		if(originalFile.length()>MAX_FILE_SIZE)
-		{
-			throw new ReportedException(new Exception(),"The size of the file \"" + originalFile.getName() +
-					"\" is " + Long.toString(originalFile.length())+ " bytes, which is too large to load.\nTry breaking the larger file into several files that are each smaller than " + Long.toString(MAX_FILE_SIZE)+ " bytes.");
-		}
+		// fix the encoding and leave results in temp file.
+		File originalFile = null;
+		try {
+		    originalFile = EncodingUtils.fixEncoding(new FileInputStream(srcFile), file.endsWith("xml"));
+        } catch (IOException e1) {
+            throw new ReportedException(e1, "Unable to fix encoding of "+file);
+        }
+		
+		
 
 		File targetFile = new File( JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/" +
 									JuxtaSessionFile.JUXTA_DOCUMENT_DIRECTORY + JuxtaSessionFile.JUXTA_SOURCE_DOCUMENT_DIRECTORY +
-									originalFile.getName() );
+									srcFile.getName() );
 
-        String targetWrapperFileName = JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/" + JuxtaSessionFile.JUXTA_DOCUMENT_DIRECTORY + originalFile.getName();
+        String targetWrapperFileName = JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/" + JuxtaSessionFile.JUXTA_DOCUMENT_DIRECTORY + srcFile.getName();
         File targetWrapperFile;
 		if( file.endsWith("xml") )
 		{
@@ -197,11 +204,15 @@ public class DocumentManager implements Serializable
             throw new ReportedException(e,"unable to copy file.");
         }
 
-        doc = factory.readFromFile(targetFile);
+        JuxtaDocumentFactory factory = new JuxtaDocumentFactory();
+        JuxtaDocument doc = factory.readFromFile(targetFile);
+        
         // write it out to our final location--this produces two files
         factory.writeToFile(doc, targetWrapperFile);
+        
         // make sure the image files are where we want them
         transferImageFiles( doc, originalFile );
+        
         // re-read it to normalize document behavior
         doc = factory.readFromFile(targetWrapperFile);
             
@@ -215,36 +226,10 @@ public class DocumentManager implements Serializable
 
         return doc;
     }
-    
-    /**
-     * Reconstrinct a document that has been spot-edited
-     * @param name
-     * @param file
-     * @param encoding
-     * @return
-     * @throws ReportedException
-     */
-    public JuxtaDocument reconstructDocument(String name, String file, String encoding) throws ReportedException {
-        JuxtaDocument doc = null;
-        JuxtaDocumentFactory factory = new JuxtaDocumentFactory(encoding);
-        doc = factory.readFromFile(new File(file) );
-        doc.setDocumentName(name);
-        
-        // the default parse from readFromFile leaves images in ../images/..
-        // the images are already in the correct relative path because this doc
-        // was already imported into juxta so no need for this. Update each image
-        // to point directly to the juxt work dirs
-        for( Iterator i = doc.getImageList().iterator(); i.hasNext(); ) {
-            Image img = (Image) i.next();
-            File updated = new File( JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/docs/images/" + img.getImageFile().getName() );
-            img.updateFile(updated);
-        }
-        return doc;
-    }
 
-    public JuxtaDocument addDocument( String name, String file, String encoding ) throws ReportedException
+    public JuxtaDocument addDocument( String name, String file ) throws ReportedException
     {
-        JuxtaDocument doc = constructDocument(name, file, encoding);
+        JuxtaDocument doc = constructDocument(name, file);
         addExistingDocument(doc);
         return doc;
     }
@@ -256,7 +241,7 @@ public class DocumentManager implements Serializable
     }
     
     private void transferImageFiles( JuxtaDocument oldDoc, File originalFile ) throws ReportedException {
-        for( Iterator i = oldDoc.getImageList().iterator(); i.hasNext(); )
+        for( Iterator<Image> i = oldDoc.getImageList().iterator(); i.hasNext(); )
         {
             Image targetImage = (Image) i.next();
             

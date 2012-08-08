@@ -543,6 +543,7 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
     }
 
     private void close() {
+        this.priorTemplate = null;
         if (openSavePromptDialog()) {
             try {
                 loadSession(JuxtaSession.createSession(null, this, false));
@@ -700,9 +701,7 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
 
             try {
                 if (file != null && file.isFile()) {
-                    JuxtaDocumentFactory factory = new JuxtaDocumentFactory(addDocumentDialog.getEncoding());
-                    JuxtaDocument document = this.session.getDocumentManager().constructDocument(file.getName(),
-                            file.getAbsolutePath(), addDocumentDialog.getEncoding());
+                    JuxtaDocument document = this.session.getDocumentManager().constructDocument(file.getName(), file.getAbsolutePath());
 
                     if (document != null ) {
                         // no need to process non-xml files. just add them
@@ -764,6 +763,7 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
                             this.priorTemplate = template;
                             
                             // parse and add it to the session
+                            JuxtaDocumentFactory factory = new JuxtaDocumentFactory();
                             factory.reparseDocument(document, template);
                             this.session.addExistingDocument(document, this);
                             this.addingDocumentProgressDialog.showDialog();
@@ -2292,7 +2292,7 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
         try {
             // open this file as a JuxtaDocument if possible
             JuxtaDocument document = session.getDocumentManager().constructDocument(file.getName(),
-                    file.getAbsolutePath(), "UTF-8");
+                    file.getAbsolutePath());
 
             // if there is a document name specified by the XML, use the name
             // given

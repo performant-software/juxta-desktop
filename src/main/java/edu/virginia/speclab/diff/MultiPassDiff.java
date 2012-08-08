@@ -46,7 +46,7 @@ public class MultiPassDiff
      */
 	public MultiPassDiff( DocumentModel baseDocument, DocumentModel witnessDocument )
 	{
-		diff = new DiffAlgorithm(baseDocument.getTokenizerSettings());	
+		diff = new DiffAlgorithm();	
 		DifferenceSet diffSet = diff.diffDocuments(baseDocument,witnessDocument);
 		DifferenceConsolidator differenceConsolidator = new DifferenceConsolidator(baseDocument,witnessDocument);
 		differenceConsolidator.consolidateDifferences(diffSet);
@@ -89,7 +89,7 @@ public class MultiPassDiff
 		for( Iterator i = originalDifferenceSet.getDifferenceList().iterator(); i.hasNext(); )
 		{
 			Difference difference = (Difference) i.next();
-			DiffAlgorithm subdiff = new DiffAlgorithm(baseDocument.getTokenizerSettings());
+			DiffAlgorithm subdiff = new DiffAlgorithm();
 			
 			if( difference.getType() == Difference.CHANGE )
 			{

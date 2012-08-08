@@ -945,7 +945,7 @@ public class TestMoves  extends TestCase
         String name = filename.substring(filename.lastIndexOf('/') + 1);
         try
 		{
-        	JuxtaDocument document = documentManager.addDocument(name,filename,"UTF-8");
+        	JuxtaDocument document = documentManager.addDocument(name,filename);
         	if( document != null )
         	{
         		comparisonSet.addCollation(document);            

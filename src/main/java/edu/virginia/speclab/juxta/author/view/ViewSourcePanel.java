@@ -280,14 +280,13 @@ public class ViewSourcePanel extends JPanel implements JuxtaUserInterfaceStyle, 
             // dump the raw, edited XML to a temp file
             File tmp = new File( JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/" + newName);
             tmp.deleteOnExit();
-            Writer out = new OutputStreamWriter(new FileOutputStream(tmp), "UTF-8");
+            Writer out = new OutputStreamWriter(new FileOutputStream(tmp) );
             out.write( this.sourceCard.getRawXmlText());
             out.flush();
             out.close();
 
             // reconstruct the doc based on the edited content file
-            JuxtaDocument edited = session.getDocumentManager().constructDocument(newName, 
-                tmp.getAbsolutePath(), "UTF-8");
+            JuxtaDocument edited = session.getDocumentManager().constructDocument(newName, tmp.getAbsolutePath());
     
             // lastly, reparse it against the prior template to keep results the same
             JuxtaDocumentFactory factory = new JuxtaDocumentFactory(edited.getEncoding());

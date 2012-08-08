@@ -61,17 +61,13 @@ public class JuxtaDocumentFactory {
     public static final String DEFAULT_ENCODING = "UTF-8";
 
     public JuxtaDocumentFactory() {
-        encodingCharSet = Charset.availableCharsets().get(DEFAULT_ENCODING);
-        juxtaVersion = Juxta.JUXTA_VERSION;
-    }
-
-    public JuxtaDocumentFactory(String encoding) {
-        this.encodingCharSet = Charset.availableCharsets().get(encoding);
+        this.encodingCharSet = Charset.availableCharsets().get(DEFAULT_ENCODING);
         this.juxtaVersion = Juxta.JUXTA_VERSION;
     }
 
-    public JuxtaDocumentFactory(String juxtaVersion, String encoding) {
-        this.encodingCharSet = Charset.availableCharsets().get(encoding);
+
+    public JuxtaDocumentFactory(String juxtaVersion) {
+        this.encodingCharSet = Charset.availableCharsets().get(DEFAULT_ENCODING);
         this.juxtaVersion = juxtaVersion;
     }
 

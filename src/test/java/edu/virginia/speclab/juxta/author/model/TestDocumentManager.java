@@ -51,13 +51,13 @@ public class TestDocumentManager extends TestCase
             DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
             documentManager.loadManifest();
 
-            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA,"UTF-8");
+            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA);
             testDocA.tokenize(settings);
             
-            JuxtaDocument testDocB = documentManager.addDocument("B",testDocumentB,"UTF-8");
+            JuxtaDocument testDocB = documentManager.addDocument("B",testDocumentB);
             testDocB.tokenize(settings);
             
-            JuxtaDocument testDocC = documentManager.addDocument("C",testDocumentC,"UTF-8");
+            JuxtaDocument testDocC = documentManager.addDocument("C",testDocumentC);
             testDocC.tokenize(settings);
                         
     	    MultiPassDiff mpd = new MultiPassDiff(testDocA,testDocB);
@@ -96,9 +96,9 @@ public class TestDocumentManager extends TestCase
            documentManager = new DocumentManager(null);
            DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
            documentManager.loadManifest();
-           documentManager.addDocument("A",testDocumentA,"UTF-8");
+           documentManager.addDocument("A",testDocumentA);
 	       assertEquals( "morgms-1", documentManager.getUniqueDocumentName("morgms") );
-           documentManager.addDocument("A",testDocumentA,"UTF-8");
+           documentManager.addDocument("A",testDocumentA);
 	       assertEquals( "morgms-2", documentManager.getUniqueDocumentName("morgms") );
 	       assertEquals( "unique", documentManager.getUniqueDocumentName("unique") );
     	}
@@ -117,7 +117,7 @@ public class TestDocumentManager extends TestCase
            documentManager = new DocumentManager(null);
            DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
            documentManager.loadManifest();
-           documentManager.addDocument("A",testDocumentA,"UTF-8");	       
+           documentManager.addDocument("A",testDocumentA);	       
            
            File originalFile = new File( testDocumentA );
            File targetFile = new File( JuxtaSessionFile.JUXTA_TEMP_DIRECTORY + "/" + 
@@ -143,13 +143,13 @@ public class TestDocumentManager extends TestCase
             DocumentManager documentManager = new DocumentManager(null);
             DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
             documentManager.loadManifest();
-            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA,"UTF-8");
+            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA);
             testDocA.tokenize(settings);
             
-            JuxtaDocument testDocB = documentManager.addDocument("B",testDocumentB,"UTF-8");
+            JuxtaDocument testDocB = documentManager.addDocument("B",testDocumentB);
             testDocB.tokenize(settings);
             
-            JuxtaDocument testDocC = documentManager.addDocument("C",testDocumentC,"UTF-8");
+            JuxtaDocument testDocC = documentManager.addDocument("C",testDocumentC);
             testDocC.tokenize(settings);
         
             SearchResults results = documentManager.search("Heaven");
@@ -170,7 +170,7 @@ public class TestDocumentManager extends TestCase
             DocumentManager documentManager = new DocumentManager(null);
             DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
             documentManager.loadManifest();
-            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA,"UTF-8");
+            JuxtaDocument testDocA = documentManager.addDocument("A",testDocumentA);
             testDocA.tokenize(settings);
                     
             SearchResults results = documentManager.search("Heaven");
@@ -192,7 +192,7 @@ public class TestDocumentManager extends TestCase
             DocumentManager documentManager = new DocumentManager(null);
             DocumentManagerAccess.getInstance().setDocumentManager(documentManager);
             documentManager.loadManifest();
-            JuxtaDocument testDocA = documentManager.addDocument("D",testDocumentD,"UTF-8"); 
+            JuxtaDocument testDocA = documentManager.addDocument("D",testDocumentD); 
             assertNotNull( testDocA );
             
             testDocA.tokenize(settings);
@@ -201,7 +201,7 @@ public class TestDocumentManager extends TestCase
             assertNotNull( docAFragment );
             assertEquals( 100, docAFragment.length() );
             
-            JuxtaDocument fragmentA = documentManager.addDocumentFragment("D Frag",testDocumentD, 10, 100, "UTF-8");
+            JuxtaDocument fragmentA = documentManager.addDocumentFragment("D Frag",testDocumentD, 10, 100);
  
             assertNotNull( fragmentA );
             assertEquals( docAFragment, fragmentA.getDocumentText() );

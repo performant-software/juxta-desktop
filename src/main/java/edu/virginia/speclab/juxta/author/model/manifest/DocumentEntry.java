@@ -155,7 +155,7 @@ public class DocumentEntry
 	 */
     public JuxtaDocument loadDocument( String juxtaVersion ) throws ReportedException
     {
-		JuxtaDocumentFactory documentFactory = new JuxtaDocumentFactory(juxtaVersion, JuxtaDocumentFactory.DEFAULT_ENCODING);
+		JuxtaDocumentFactory documentFactory = new JuxtaDocumentFactory(juxtaVersion);
 		
 		JuxtaDocument document = documentFactory.readFromFile(sourceFile);		
 

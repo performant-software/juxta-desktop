@@ -19,14 +19,11 @@
 
 package edu.virginia.speclab.diff;
 
-import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 
 import edu.virginia.speclab.diff.document.DocumentModel;
-import edu.virginia.speclab.diff.document.DocumentModelFactory;
 import edu.virginia.speclab.diff.token.Token;
-import edu.virginia.speclab.diff.token.TokenizerSettings;
 import edu.virginia.speclab.util.SimpleLogger;
 
 /**
@@ -134,22 +131,12 @@ public class DiffAlgorithm
     public static final int VERBOSE_LOGGING = 1;
     
     private DocumentModel baseModel, witnessModel;
-    private TokenizerSettings settings;
 
     private SymbolTable symbolTable;
     private Correlator correlator;
     private DifferenceCollector collector;
     private DifferenceSet differenceSet;
     
-    public DiffAlgorithm()
-    {
-        settings = TokenizerSettings.getDefaultSettings();
-    }
-    
-    public DiffAlgorithm( TokenizerSettings settings )
-    {
-        this.settings = settings;
-    }
     
     public DifferenceSet diffDocuments( DocumentModel baseModel, DocumentModel witnessModel )
     {
@@ -161,29 +148,6 @@ public class DiffAlgorithm
 
         this.baseModel = baseModel;
         this.witnessModel = witnessModel;
-
-        return performDiff();
-    }
-    
-    public DifferenceSet diffStrings( String oldString, String newString )
-    {
-        // create the document models
-        baseModel = DocumentModelFactory.createFromString(oldString);        
-        witnessModel = DocumentModelFactory.createFromString(newString);
-        
-        // tokenize the documents
-        baseModel.tokenize(settings);
-        witnessModel.tokenize(settings);
-        
-        return performDiff();
-    }
-    
-    public DifferenceSet diffFiles( String oldFileName, String newFileName )
-    {      
-		DocumentModelFactory factory = new DocumentModelFactory("UTF-8"); 
-        // create the document models
-        baseModel = factory.createFromFile( new File(oldFileName) );
-        witnessModel = factory.createFromFile( new File(newFileName) );
 
         return performDiff();
     }

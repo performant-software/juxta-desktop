@@ -21,8 +21,6 @@ package edu.virginia.speclab.juxta.author.view;
 
 import java.awt.Dimension;
 import java.io.File;
-import java.nio.charset.Charset;
-import java.util.LinkedList;
 
 import javax.swing.JFileChooser;
 
@@ -54,32 +52,8 @@ public class AddDocumentDialog extends JFileChooser
         // to only allowing a single selection
         setMultiSelectionEnabled(false);
 
-		LinkedList encodingList = obtainSupportedEncodings();
         dataForm = new BiblioDataForm(this);
 		dataForm.addSpacer(10);
-        dataForm.addComboBox("Encoding",encodingList.toArray());
         setAccessory( dataForm );        
-    }
-	
-	private LinkedList obtainSupportedEncodings()
-	{
-		LinkedList encodingList = new LinkedList();
-		
-		if( Charset.isSupported("UTF-8") ) 
-			encodingList.add("UTF-8");
-
-		if( Charset.isSupported("US-ASCII") ) 
-			encodingList.add("US-ASCII");
-
-		if( Charset.isSupported("windows-1252") ) 
-			encodingList.add("windows-1252");
-		
-		return encodingList;
-	}
-    
-    public String getEncoding()
-    {
-        return dataForm.getFieldContent("Encoding");
-    }
-     
+    }     
 }

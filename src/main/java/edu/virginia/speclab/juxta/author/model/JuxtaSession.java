@@ -268,7 +268,7 @@ public class JuxtaSession {
     }
 
     private JuxtaDocument addDocument(String documentName, String fileName, String encoding) throws ReportedException {
-        JuxtaDocument document = documentManager.addDocument(documentName, fileName, encoding);
+        JuxtaDocument document = documentManager.addDocument(documentName, fileName);
         if (document != null) {
             comparisonSet.addCollation(document);
             fireDocumentAdded(document);
@@ -280,8 +280,7 @@ public class JuxtaSession {
 
     private JuxtaDocument addDocument(String documentName, String fileName, int fragmentStart, int fragmentLength,
         String encoding) throws ReportedException {
-        JuxtaDocument document = documentManager.addDocumentFragment(documentName, fileName, fragmentStart,
-            fragmentLength, encoding);
+        JuxtaDocument document = documentManager.addDocumentFragment(documentName, fileName, fragmentStart,fragmentLength);
         if (document != null) {
             comparisonSet.addCollation(document);
             fireDocumentAdded(document);
