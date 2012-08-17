@@ -152,8 +152,8 @@ public class WebServiceClient {
      * export operation.
      * @throws IOException 
      */
-    public void cancelExport( Long id ) throws IOException {
-        PostMethod post = new PostMethod(this.baseUrl+"/import/"+id+"/cancel");
+    public void cancelExport( String taskId ) throws IOException {
+        PostMethod post = new PostMethod(this.baseUrl+"/import/"+taskId+"/cancel");
         Part[] parts = {
             new StringPart("token", this.authToken)
         };
@@ -173,10 +173,10 @@ public class WebServiceClient {
      * @return The indentifer for the started process. This is used for tracking status
      * @throws IOException 
      */
-    public Long beginExport( final File jxtFile, final String name, final String desc )  throws IOException {
+    public String beginExport( final File jxtFile, final String name, final String desc )  throws IOException {
         return beginExport( jxtFile, name, desc, false);
     }
-    public Long beginExport( final File jxtFile, final String name, final String desc, boolean overwrite ) throws IOException {
+    public String beginExport( final File jxtFile, final String name, final String desc, boolean overwrite ) throws IOException {
         
         PostMethod post = null;
         if ( overwrite ) {
@@ -199,7 +199,7 @@ public class WebServiceClient {
         execRequest(post);
         String response = getResponseString(post);
         post.releaseConnection();
-        return Long.parseLong(response);
+        return response;
     }
     
     /**
@@ -209,8 +209,8 @@ public class WebServiceClient {
      * @return
      * @throws IOException 
      */
-    public RequestStatus getExportStatus( Long requestId ) throws IOException {
-        final String url = this.baseUrl+"/import/"+requestId;
+    public RequestStatus getExportStatus( String taskId ) throws IOException {
+        final String url = this.baseUrl+"/import/"+taskId;
         GetMethod get = new GetMethod(url);
         get.setRequestHeader("accept", "application/json");
         execRequest(get);

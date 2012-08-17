@@ -67,7 +67,7 @@ public class WebServiceExportDialog extends JDialog {
     private JButton closeBtn;
     private JTextField nameEdit;
     private JTextArea descriptionEdit;
-    private Long exportRequestId = null;
+    private String exportTaskId = null;
     private WebServiceClient wsClient;
     private JPanel setupPanel;
     private JPanel statusPanel;
@@ -291,7 +291,7 @@ public class WebServiceExportDialog extends JDialog {
     
     private void viewWebServiceData() {
       String urlStr = this.wsClient.getBaseUrl();
-      urlStr += "/sets/"+this.exportRequestId+"/view?mode=heatmap";
+      urlStr += "/sets/"+this.exportTaskId+"/view?mode=heatmap";
       try {
           URI uri = new URI( urlStr );
           java.awt.Desktop.getDesktop().browse(uri);
@@ -328,7 +328,7 @@ public class WebServiceExportDialog extends JDialog {
                 // do the export
                 showStatusUI();
                 authenticateUser();
-                this.exportRequestId = this.wsClient.beginExport( jxt, setName, desc );
+                this.exportTaskId = this.wsClient.beginExport( jxt, setName, desc );
             } catch (Exception e) {
                 // catch naming conflict errors and prompt to overwrite
                 if ( e.getMessage().contains("Conflict")) {
@@ -337,7 +337,7 @@ public class WebServiceExportDialog extends JDialog {
                         "Overwrite", JOptionPane.YES_NO_OPTION);
                     if ( resp == JOptionPane.YES_OPTION ) {
                         this.statusLabel.setText("Re-Exporting JXT");
-                        this.exportRequestId = this.wsClient.beginExport( jxt, setName, desc, true );
+                        this.exportTaskId = this.wsClient.beginExport( jxt, setName, desc, true );
                     } else {
                         errorHandled = true;
                         showSetupUI();
@@ -356,7 +356,7 @@ public class WebServiceExportDialog extends JDialog {
                 new Runnable() {
                     public void run() {
                         final WebServiceClient client = WebServiceExportDialog.this.wsClient;
-                        final Long id = WebServiceExportDialog.this.exportRequestId;
+                        final String id = WebServiceExportDialog.this.exportTaskId;
                         try {
                             RequestStatus status = client.getExportStatus( id );  
                             displayStatus( status );
@@ -462,7 +462,7 @@ public class WebServiceExportDialog extends JDialog {
                 // send one request and kill the dislog.
                 // The request may take a bit to be processed, but
                 // no need to keep non-responsive dialog up
-                this.wsClient.cancelExport( this.exportRequestId );
+                this.wsClient.cancelExport( this.exportTaskId );
                 setVisible(false);
             } catch (IOException e) {
                 e.printStackTrace();
