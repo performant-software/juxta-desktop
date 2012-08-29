@@ -230,6 +230,9 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
 
     // Ask AWT which menu modifier we should be using.
     final static int MENU_MASK = Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
+    
+    // font to be ues for rendering all text in juxta
+    public static Font textFont = NORMAL_FONT;
 
     public JuxtaAuthorFrame(String wsUrl, String startFile) throws FatalException {
         super();
@@ -1947,6 +1950,8 @@ public class JuxtaAuthorFrame extends JFrame implements JuxtaSessionListener, Di
                 Font font = fontChooser.getSelectedFont();
                 frame.getCollationView().setTextFont(font);
                 frame.docCompareView.dualTextPanel.setFont(font);
+                frame.viewSourcePanel.setTextFont(font);
+                JuxtaAuthorFrame.textFont = font;
             }
         }
     }

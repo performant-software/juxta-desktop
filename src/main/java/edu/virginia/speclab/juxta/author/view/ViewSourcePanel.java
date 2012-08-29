@@ -20,6 +20,7 @@ package edu.virginia.speclab.juxta.author.view;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -86,6 +87,11 @@ public class ViewSourcePanel extends JPanel implements JuxtaUserInterfaceStyle, 
         add(this.sourceCard, BorderLayout.CENTER);
 
         add(createToolbar(), BorderLayout.SOUTH);
+    }
+    
+
+    public void setTextFont(Font font) {
+        this.sourceCard.setTextFont(font);
     }
     
     @SuppressWarnings("serial")

@@ -20,6 +20,7 @@ package edu.virginia.speclab.juxta.author.view.collation;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -36,6 +37,7 @@ import edu.virginia.speclab.juxta.author.model.AnnotationManager;
 import edu.virginia.speclab.juxta.author.model.DocumentManager;
 import edu.virginia.speclab.juxta.author.model.JuxtaDocument;
 import edu.virginia.speclab.juxta.author.view.InvalidDataException;
+import edu.virginia.speclab.juxta.author.view.JuxtaAuthorFrame;
 import edu.virginia.speclab.ui.WrappingTextLabel;
 
 class MarginBox implements RenderingConstants {
@@ -43,6 +45,7 @@ class MarginBox implements RenderingConstants {
     private boolean annotated;
 
     private int textType;
+    private Font font;
 
     private Point attachPoint;
 
@@ -70,6 +73,9 @@ class MarginBox implements RenderingConstants {
         this.difference = difference;
         this.documentManager = documentManager;
         this.annotated = hasAnnotation;
+        
+        this.font = JuxtaAuthorFrame.textFont;
+        this.font = this.font.deriveFont(10F);
 
         // this is where the box will be drawn
         Point boxLocation = new Point(attachPoint.x, attachPoint.y - (TITLE_HEIGHT / 2));
@@ -174,7 +180,7 @@ class MarginBox implements RenderingConstants {
         if (body.length() > 0) {
             float width = BOX_WIDTH - SYMBOL_SIDEBAR_WIDTH - MARGIN_BOX_TEXT_INSET_LEFT - MARGIN_BOX_TEXT_INSET_RIGHT;
 
-            this.bodyTextBox = new WrappingTextLabel(body, DIFF_BODY_FONT, DIFF_TEXT_COLOR, width,
+            this.bodyTextBox = new WrappingTextLabel(body, this.font, DIFF_TEXT_COLOR, width,
                 MARGIN_BOX_TEXT_MAX_LINES, fontRenderContext);
 
             this.bodyTextBox.setLocation(boxLocation.x + SYMBOL_SIDEBAR_WIDTH + MARGIN_BOX_TEXT_INSET_LEFT,
@@ -224,7 +230,7 @@ class MarginBox implements RenderingConstants {
         if (body.length() > 0) {
             float width = BOX_WIDTH - MARGIN_BOX_TEXT_INSET_LEFT - MARGIN_BOX_TEXT_INSET_RIGHT;
 
-            this.bodyTextBox = new WrappingTextLabel(body, DIFF_BODY_FONT, DIFF_TEXT_COLOR, width,
+            this.bodyTextBox = new WrappingTextLabel(body, this.font, DIFF_TEXT_COLOR, width,
                 MARGIN_BOX_TEXT_MAX_LINES, fontRenderContext);
 
             this.bodyTextBox.setLocation(boxLocation.x + MARGIN_BOX_TEXT_INSET_LEFT, boxLocation.y + TITLE_HEIGHT

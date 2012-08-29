@@ -20,6 +20,7 @@ package edu.virginia.speclab.juxta.author.view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Rectangle;
 
 import javax.swing.BorderFactory;
@@ -47,6 +48,11 @@ public class DocumentSourceCard extends JPanel {
         this.dsTextArea = new DocumentSourceTextArea();
         this.textScroller = new JScrollPane(this.dsTextArea);
         add(this.textScroller, BorderLayout.CENTER);
+    }
+    
+
+    public void setTextFont(Font font) {
+        this.dsTextArea.setFont(font);
     }
 
     public void setEditable(boolean editable) {

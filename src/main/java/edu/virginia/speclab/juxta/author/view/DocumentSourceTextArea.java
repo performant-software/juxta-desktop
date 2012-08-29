@@ -18,26 +18,28 @@
  
 package edu.virginia.speclab.juxta.author.view;
 
-import edu.virginia.speclab.diff.OffsetRange;
-import edu.virginia.speclab.juxta.author.view.ui.JuxtaUserInterfaceStyle;
-import edu.virginia.speclab.util.SimpleLogger;
-
 import java.awt.Color;
 import java.awt.Rectangle;
-import javax.swing.JTextArea;
+
+import javax.swing.JEditorPane;
 import javax.swing.SwingUtilities;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Highlighter;
+import javax.swing.text.StyledEditorKit;
 import javax.swing.undo.UndoManager;
+
+import edu.virginia.speclab.diff.OffsetRange;
+import edu.virginia.speclab.juxta.author.view.ui.JuxtaUserInterfaceStyle;
+import edu.virginia.speclab.util.SimpleLogger;
 
 /**
  *
  * @author ben
  */
-public class DocumentSourceTextArea extends JTextArea implements JuxtaUserInterfaceStyle, UndoableEditListener {
+public class DocumentSourceTextArea extends JEditorPane implements JuxtaUserInterfaceStyle, UndoableEditListener {
 
     private static final Color READ_ONLY_COLOR = new Color(255,255,255); 
     private static final Color EDIT_COLOR = new Color(255,250,240); 
@@ -45,9 +47,13 @@ public class DocumentSourceTextArea extends JTextArea implements JuxtaUserInterf
     
     public DocumentSourceTextArea()
     {
+        setEditorKit(new StyledEditorKit());
+        putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
+        setFont(NORMAL_FONT);
         this.setEditable(false);
-        this.setWrapStyleWord(true);
-        this.setLineWrap(true);this.setBackground( READ_ONLY_COLOR );
+        //this.setWrapStyleWord(true);
+        //this.setLineWrap(true);
+        this.setBackground( READ_ONLY_COLOR );
         this.getDocument().addUndoableEditListener( this );
     }
     
