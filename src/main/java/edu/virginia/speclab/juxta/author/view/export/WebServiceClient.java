@@ -54,7 +54,7 @@ public class WebServiceClient {
     /**
      * URL that will be used to access juxtacommons
      */
-    public static final String DEFAULT_URL = "http://juxta.performantsoftware.com";
+    public static final String DEFAULT_URL = "http://juxtacommons.org";
     
     public WebServiceClient( final String url ) {
         this.baseUrl = url;
