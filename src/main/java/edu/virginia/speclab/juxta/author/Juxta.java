@@ -48,7 +48,7 @@ import edu.virginia.speclab.util.SimpleLogger;
  */
 public class Juxta implements JuxtaUserInterfaceStyle {
     // TODO when changing version number, also update isVersionCompatible() function
-    public static final String JUXTA_VERSION = "1.6.5";
+    public static final String JUXTA_VERSION = "1.7";
 
     public static final String ORIGINAL_SAMPLE_DIRECTORY = "./sample";
     public static final String MAC_OSX_BASE_DIRECTORY = System.getProperty("user.home")
@@ -195,6 +195,6 @@ public class Juxta implements JuxtaUserInterfaceStyle {
         return ( version.equals("1.3.1") || version.equals("1.4") || 
                  version.equals("1.4 RC5") || version.equals("1.4 RC7") ||
                  version.equals("1.5") || version.equals("1.6") || 
-                 version.equals("1.6.1") || version.equals("1.6.2") || version.equals("1.6.5") );
+                 version.equals("1.6.1") || version.equals("1.6.2") || version.equals("1.6.5") || version.equals("1.7"));
     }
 }
